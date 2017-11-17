@@ -1,6 +1,6 @@
 init:
-    pip install pipenv
-    pipenv install --dev
+	pip install pipenv
+	pipenv install --dev
 
 test:
-    python manage.py test
+	python manage.py test
