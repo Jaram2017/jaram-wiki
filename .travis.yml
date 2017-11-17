@@ -1,0 +1,26 @@
+language:
+  python
+
+python:
+  - "3.4"
+  - "3.5"
+  - "3.6"
+  - "3.7dev"
+
+dist: trusty
+sudo: required
+addons:
+  postgres: "9.4"
+
+services:
+  - postgresql
+
+install: "make"
+
+before_script:
+- psql -c 'create database jaram_wiki;' -U postgres
+- python manage.py makemigrations
+
+script:
+  - python manage.py migrate
+  - make test
