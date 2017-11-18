@@ -3,8 +3,8 @@ python:
 - '3.4'
 - '3.5'
 - '3.6'
-- '3.7-dev'
-- 'nightly'
+- 3.7-dev
+- nightly
 dist: trusty
 sudo: required
 addons:
@@ -21,5 +21,7 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: HRFzY9ssGc/PVEPvpUBDkUI2zMllLFDGr2oec0flJ4tIxvsgnZtq+Vn8vD888hA6VqZUhTR8V5ty714aQSfqvlkwf2WOv0vpmh0OCCjF1zoVc5Ye5e8zckZ0nCIpIeNilZXKKR7hYFObTL0x7lKnK78sLn+s+vRTr079pKF9pXJNI6HWYkaWs7Gh+CFVDsOT4RfG/rIA4CRLV+7eSl68CGFJepeQUCl/QEUk2iBcZ5c5XVYA9+Z7QtzIHoncfG/nrMuu4S0GQOH8XaVaVtsJzqLFggOkRbRk2C8lat4UxszHjzDMF8bc7wH94UtTBUeaaA8Zuxt+aEaJYU2+eE6fWeDraHRyc0G5W3aVzCACWyvKBJIlTVhFR7aX7HLWfpyCApdb1s+mfbjudohvf3Evt+PpJxWyBp65+LHWEGkHSAKzMQ3wX0HhDUtorJg6w4tnseeYZsy2kHc1Xos6kxB+4yfM9MxkgMAPcZezjcsCrrR7PFe157zTloqoWEegJRgJU8+vKk9CXf8OgNCIx9ffIXU+fWPE4h3ksbv0bUt87OIRGsTS64WwFqSC2QsRb7luUNNXlHPLnTcCLEwzKnv0kR6Fp2VE0IqpqPd84TxzDFAIugaLfLHUiwo0+X0NTiEah6nI+2bSHh68g9wOxD7m1jzVNVPaDF65ciiXXF++dP4=
-  app: jaram-wiki-test
+    secure: AybR2KoVYSvkc9FFwzFF/bMqyfPQR1fegKb8y2EVbah0tskZGAGTqKnED8u7OtKbD8/dOHv+7TmHyFdho4ArnZj/z4TeEveB2ShW1NQbuzBWdTQZi0/JnXZ4x59D7nDW/XdeJdJNy69HKyWIJbQ5eDJ+kvoyhEZPT8K2xVF/IgQW2yaj8lbYue+NqERvRGEwiO/kZDEEpXDC/Lcw4Ap378WasHDq/XrNEyz/30YdeePvh2rKYuYoq35QyZDdPheLqRRvcdfAxDYbQgg14emDxuKtZcfqN6+v/d79PgZjludML7tuLxilJOs3vqNJj2+KxvIHDSDDb+5sOq8szM5iDpCLj1B/ufl3sjHAdbTyQZK0y7xjDmRpJsqL3NfW5IP+tQ0OKwdXQLCTNcxZlWvRUiJX4LrykmO5lOR78UfjGDyOKjn9/Tvfa7bDNDbfAcpE4zbcNDAxpODq4UXB/Dmc0b7QnFXpNy66R2y4jDkEqeGOsYaF/UwnwP+KF0yX5GWe3Fu+AJTUhp75/2jlPGMaqP5Wc+6v3/JvH1Sp8rhU5PxlP+sL2xdG37ihajF8kJQ59omZWSf8Ebupn8OdDAXK6XkdWBTR2scWMm8GZ9B9cGCpxt6ME7larGMOIWTDzHJbGtw2InZcTWa3Nbldn7T70URyFBmWJvTWtHYcEJgTA9o=
+  app: jaram-wiki
+  on:
+    repo: Jaram2017/jaram-wiki
